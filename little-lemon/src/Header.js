@@ -1,0 +1,40 @@
+// Header.js
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import Images from './Images';
+
+function Header() {
+  return (
+    <header>
+      <Helmet>
+        {/* Basic meta tags for SEO */}
+        <meta name="description" content="Explore Little Lemon Restaurant in Chicago - A charming neighborhood bistro offering simple food and classic cocktails in a lively, casual atmosphere with locally-sourced daily specials." />
+        <meta name="title" content="Little Lemon Restaurant" />
+        <meta name="author" content="Azha Balouch" />
+        <meta name="language" content="english" />
+        <meta name="robots" content="index,follow" />
+        <meta name="google" content="nositelinkssearchbox" />
+        <meta name="googlebot" content="notranslate" />
+        <meta name="revised" content="Thursday, August 18th, 2023, 3:30 pm" />
+        <meta name="rating" content="safe for kids" />
+        <meta name="copyright" content="Copyright 2023 Little Lemon Restaurant" />
+
+        {/* HTTP-equiv meta tags */}
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="default-style" content="Your default style" />
+        <meta http-equiv="refresh" content="30" />
+
+        {/* Responsive design/mobile meta tags */}
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
+
+      <img src={Images.logoImage} alt="Little Lemon Logo" width={200} height={50}/>
+
+      {/* Other header content */}
+    </header>
+  );
+}
+
+export default Header;
