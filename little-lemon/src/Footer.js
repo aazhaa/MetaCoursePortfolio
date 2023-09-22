@@ -6,7 +6,6 @@ function Footer() {
   return (
     <footer>
       <img src={Images.footerImage} alt="Little Lemon Footer Logo" width={50} height={100}/>
-      
       <div className='FooterNav'>
         <h3>Navigation</h3>
         <ul>
@@ -18,7 +17,6 @@ function Footer() {
           <li><a href="/about">Login</a></li>
         </ul>
       </div>
-      
       <div className='Contact'>
         <h3>Contact</h3>
         <p>
@@ -27,7 +25,6 @@ function Footer() {
           +1 111 222 3333
         </p>
       </div>
-
       <div className='SocialMediaLinks'>
         <h3>Social Media</h3>
         <ul>
@@ -37,7 +34,6 @@ function Footer() {
           <li><a href="/about">YouTube</a></li>
         </ul>
       </div>
-
     </footer>
   );
 }
