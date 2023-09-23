@@ -1,0 +1,59 @@
+nav ul li {
+    list-style-type: none;
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between menu items */
+    font-size: 16px; /* Set the font size */
+}
+
+nav li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Set link color */
+    transition: color 0.3s ease; /* Add smooth color transition */
+}
+
+/* Change link color on hover */
+nav li a:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+/* Style the active (current) menu item */
+nav li.active a {
+font-weight: bold; /* Apply bold font to active item */
+color: #007bff; /* Change color for active item */
+}
+
+/* Add a background color on hover for menu items */
+nav li a:hover {
+background-color: #f2f2f2; /* Background color on hover */
+border-radius: 5px; /* Add rounded corners */
+padding: 5px 10px; /* Add padding for better clickability */
+}
+
+/* Style nested (sub) menus */
+nav li ul {
+display: none; /* Hide nested menus by default */
+position: absolute;
+background-color: #fff; /* Set background color for submenus */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+nav li:hover ul {
+display: block; /* Display nested menu on hover */
+}
+
+/* Style nested menu items */
+nav li ul li {
+display: block;
+margin: 0;
+}
+
+/* Style nested menu links */
+nav li ul li a {
+padding: 10px 15px; /* Add padding to nested menu links */
+color: #333; /* Set color for nested menu links */
+}
+
+/* Change nested menu link color on hover */
+nav li ul li a:hover {
+color: #007bff; /* Change color on hover */
+}

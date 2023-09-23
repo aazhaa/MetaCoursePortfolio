@@ -1,0 +1,29 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* To evenly distribute items */
+    align-items: center; /* To vertically center items */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Adjust styles for individual sections within the footer as needed */
+.FooterNav,
+.Contact,
+.SocialMediaLinks {
+flex: 1; /* Allow each section to grow and fill available space */
+text-align: center; /* Center-align the content within each section */
+margin: 0 10px; /* Add spacing between sections */
+}
+
+/* Style the ul and li elements in your footer as needed */
+.FooterNav ul,
+.Contact ul,
+.SocialMediaLinks ul {
+list-style: none; /* Remove list bullets */
+padding: 0;
+}
+
+.FooterNav ul li,
+.Contact ul li,
+.SocialMediaLinks ul li {
+margin-bottom: 5px; /* Add spacing between list items */
+}

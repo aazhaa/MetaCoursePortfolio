@@ -9,7 +9,7 @@ import './stylesheet.css';
 
 function App() {
   return (
-    <div className = "grid-container">
+    <div className="grid-container">
       <Header />
       <Nav />
       <Main />

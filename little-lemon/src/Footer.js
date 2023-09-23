@@ -1,10 +1,12 @@
 // Footer.js
 import React from 'react';
 import Images from './Images';
+import './stylesheet.css';
+import './StyleforFooter.css';
 
 function Footer() {
   return (
-    <footer>
+    <footer className="footer-container">
       <img src={Images.footerImage} alt="Little Lemon Footer Logo" width={50} height={100}/>
       <div className='FooterNav'>
         <h3>Navigation</h3>

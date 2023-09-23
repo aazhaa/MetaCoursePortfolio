@@ -2,6 +2,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Images from './Images';
+import './stylesheet.css';
 
 function Header() {
   return (
