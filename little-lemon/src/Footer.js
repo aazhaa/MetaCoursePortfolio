@@ -2,11 +2,10 @@
 import React from 'react';
 import Images from './Images';
 import './stylesheet.css';
-import './StyleforFooter.css';
 
 function Footer() {
   return (
-    <footer className="footer-container">
+    <footer>
       <img src={Images.footerImage} alt="Little Lemon Footer Logo" width={50} height={100}/>
       <div className='FooterNav'>
         <h3>Navigation</h3>
@@ -15,8 +14,7 @@ function Footer() {
           <li><a href="/about">About</a></li>
           <li><a href="/about">Menu</a></li>
           <li><a href="/about">Reservations</a></li>
-          <li><a href="/about">Order Online</a></li>
-          <li><a href="/about">Login</a></li>
+          <li><a href="/about">Order</a></li>
         </ul>
       </div>
       <div className='Contact'>

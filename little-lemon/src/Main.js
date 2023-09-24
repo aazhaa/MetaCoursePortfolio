@@ -15,7 +15,7 @@ function Main() {
           <button>Book Table</button>
         </div>
 
-        <img src={Images.heroImage} alt="Restaurant Food Glipse" width={150} height={200}/>
+        <img src={Images.heroImage} alt="Restaurant Food Glipse"/>
       </section>
 
 
