@@ -10,6 +10,7 @@ import user2 from './images/User2.jpg';
 import user3 from './images/User3.jpg';
 import owner1 from './images/male-chef.jpg';
 import owner2 from './images/women-chef.jpg';
+import delivery from './images/delivery.png';
 
 
 export const Images = {
@@ -23,8 +24,8 @@ export const Images = {
     user2,
     user3,
     owner1,
-    owner2
-  // Add more images as needed
+    owner2,
+    delivery
 };
 
 export default Images;

@@ -32,25 +32,46 @@ function Main() {
 
         <div className='Cards'>
           <div className='card1'>
-            <img src={Images.dish1} alt="Greek Salad" width={150} height={100}/>
-            <h3>Greek Salad</h3>
-            <p>$12.99</p>
-            <p>Greek salad is often served as a side dish or appetizer in Greek cuisine. It's a delightful combination of textures and tastes.</p>
-            <button>Order a Delivery</button>
+            <img className='dishImg1' src={Images.dish1} alt="Greek Salad"/>
+            <div className='dishTitleAndPrice1'>
+              <h3>Greek Salad</h3>
+              <p>$12.99</p>
+            </div>
+            <div className='dishDetails1'>
+              <p className="dDescription1">Greek salad is often served as a side dish or appetizer in Greek cuisine. It's a delightful combination of textures and tastes.</p>
+            </div>
+            <div className="OrderBtnAndImg1">
+              <button>Order a Delivery</button>
+              <img src={Images.delivery} alt="Delivery Man"/>
+            </div>
           </div>
           <div className='card2'>
-            <img src={Images.dish2} alt="Brochette Culinary" width={150} height={100}/>
-            <h3>Brochette</h3>
-            <p>$25.99</p>
-            <p>A brochette refers to skewered and grilled or roasted pieces of food, typically served as a savory appetizer, main course, or even a snack.</p>
-            <button>Order a Delivery</button>
+            <img className='dishImg2' src={Images.dish2} alt="Brochette Culinary"/>
+            <div className='dishTitleAndPrice2'>
+              <h3>Brochette</h3>
+              <p>$25.99</p>
+            </div>
+            <div className='dishDetails2'>
+              <p className="dDescription2">A brochette refers to skewered and grilled or roasted pieces of food, typically served as a savory appetizer, main course, or even a snack.</p>
+            </div>
+            <div className="OrderBtnAndImg2">
+                <button>Order a Delivery</button>
+                <img src={Images.delivery} alt="Delivery Man"/>
+              </div>
           </div>
           <div className='card3'>
-            <img src={Images.dish3} alt="Lemon Dessert" width={150} height={100}/>
-            <h3>Lemon Dessert</h3>
-            <p>$5.99</p>
-            <p>A lemon tart is a popular lemon-based dessert known for its harmonious balance of sweet and tart flavors.</p>
-            <button>Order a Delivery</button>
+            <img className='dishImg3' src={Images.dish3} alt="Lemon Dessert"/>
+            <div className='dishTitleAndPrice3'>
+              <h3>Lemon Dessert</h3>
+              <p>$5.99</p>
+            </div>
+            <div className='dishDetails3'>
+              <p className="dDescription3">A lemon tart is a popular lemon-based dessert known for its harmonious balance of sweet and tart flavors.</p>
+            </div>
+            <div className="OrderBtnAndImg3">
+                <button>Order a Delivery</button>
+                <img src={Images.delivery} alt="Delivery Man"/>
+              </div>
           </div>
         </div>
       </section>

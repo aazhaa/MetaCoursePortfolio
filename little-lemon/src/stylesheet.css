@@ -173,11 +173,95 @@ section {
 }
 
 .Cards {
+  position: relative;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3%;
+  width: 100%;
+}
+
+[class*='card']{
+  width: 252px;
+  height: 452px;
+  border-radius: 16px;
+  background: #EDEFEE;
+}
+
+[class*='dishImg'] {
+  width: 252px;
+  height: 190px;
+  border-radius: 16px;
+}
+
+[class*='dishDetails'] {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+[class*='dDescription'] {
+  color: #000;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 224px;
+}
+
+[class*='dishTitleAndPrice'] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+[class*='dishTitleAndPrice'] h3 {
+  color: #000;
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 6%;
+}
+
+[class*='dishTitleAndPrice'] p {
+  color: #F4CE14;
+  text-align: right;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-right: 6%;
+ }
+
+[class*='OrderBtnAndImg'] {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  margin-left: 15px;
+}
+
+[class*='OrderBtnAndImg'] button {
+  background: none !important;
+  border: none;
+  padding: 0;
+  font-family: Karla;
+  font-size: 18px;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+[class*='OrderBtnAndImg'] img {
+  width: 30px;
+  height: 27px;
+  margin-left: 15px;
+}
 
 /*****************/
 /* Footer */
