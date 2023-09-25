@@ -7,15 +7,19 @@ function Main() {
     <main>
 
       {/* Hero Section - Details about restaurant and reservation button */}
-      <section className='HeroSection'>
-        <div className='Details'>
-          <h1>Little Lemon</h1>
-          <h3>Chicago</h3>
-          <p>Little Lemon is a charming neighborhood bistro that serves simple foor and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.</p>
-          <button>Book Table</button>
-        </div>
+      <section>
+        <div className='BgContainer'>
+          <div className='HeroSection'>
+            <div className='Details'>
+              <h1>Little Lemon</h1>
+              <h3>Chicago</h3>
+              <p>Little Lemon is a charming neighborhood bistro that serves simple foor and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.</p>
+              <button>Book Table</button>
+            </div>
 
-        <img src={Images.heroImage} alt="Restaurant Food Glipse"/>
+            <img src={Images.heroImage} alt="Restaurant Food Glipse"/>
+          </div>
+        </div>
       </section>
 
 
@@ -26,26 +30,28 @@ function Main() {
           <button>Online Menu</button>
         </div>
 
-        <div className='card1'>
-          <img src={Images.dish1} alt="Greek Salad" width={150} height={100}/>
-          <h3>Greek Salad</h3>
-          <p>$12.99</p>
-          <p>Greek salad is often served as a side dish or appetizer in Greek cuisine. It's a delightful combination of textures and tastes.</p>
-          <button>Order a Delivery</button>
-        </div>
-        <div className='card2'>
-          <img src={Images.dish2} alt="Brochette Culinary" width={150} height={100}/>
-          <h3>Brochette</h3>
-          <p>$25.99</p>
-          <p>A brochette refers to skewered and grilled or roasted pieces of food, typically served as a savory appetizer, main course, or even a snack.</p>
-          <button>Order a Delivery</button>
-        </div>
-        <div className='card3'>
-          <img src={Images.dish3} alt="Lemon Dessert" width={150} height={100}/>
-          <h3>Lemon Dessert</h3>
-          <p>$5.99</p>
-          <p>A lemon tart is a popular lemon-based dessert known for its harmonious balance of sweet and tart flavors.</p>
-          <button>Order a Delivery</button>
+        <div className='Cards'>
+          <div className='card1'>
+            <img src={Images.dish1} alt="Greek Salad" width={150} height={100}/>
+            <h3>Greek Salad</h3>
+            <p>$12.99</p>
+            <p>Greek salad is often served as a side dish or appetizer in Greek cuisine. It's a delightful combination of textures and tastes.</p>
+            <button>Order a Delivery</button>
+          </div>
+          <div className='card2'>
+            <img src={Images.dish2} alt="Brochette Culinary" width={150} height={100}/>
+            <h3>Brochette</h3>
+            <p>$25.99</p>
+            <p>A brochette refers to skewered and grilled or roasted pieces of food, typically served as a savory appetizer, main course, or even a snack.</p>
+            <button>Order a Delivery</button>
+          </div>
+          <div className='card3'>
+            <img src={Images.dish3} alt="Lemon Dessert" width={150} height={100}/>
+            <h3>Lemon Dessert</h3>
+            <p>$5.99</p>
+            <p>A lemon tart is a popular lemon-based dessert known for its harmonious balance of sweet and tart flavors.</p>
+            <button>Order a Delivery</button>
+          </div>
         </div>
       </section>
 
