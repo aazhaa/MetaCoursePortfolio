@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+/* Importing Google Fonts for the project */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Markazi+Text:wght@500&display=swap');
 
+/* Styling for the grid container */
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto auto auto;
-  gap: 20px;
+  display: grid; /* Defines this element as a grid container */
+  grid-template-columns: repeat(12, 1fr); /* 12 columns with equal width */
+  grid-template-rows: auto auto auto; /* 3 rows with automatic height */
+  gap: 20px; /* 20px gap between grid items */
   margin-top: 10px;
 
-  /* Define the grid areas */
+  /* Define the grid areas for header, main content, and footer */
   grid-template-areas:
       "header header header header header header header header header header header header"
       "main main main main main main main main main main main main"
@@ -17,298 +19,451 @@
 /*****************/
 /* Header */
 /*****************/
+/* Styling for the header section */
 .Header {
-  grid-area: header;
-  display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  grid-area: header; /* Places this element in the 'header' grid area */
+  display: flex; /* Displays its children in a flex container */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
 }
 
+/* Styling for navigation items */
 nav ul li {
-  list-style-type: none;
-  display: inline; /* Display list items horizontally */
-  margin-right: 20px; /* Add spacing between menu items */
-  font-size: 16px; /* Set the font size */
+  list-style-type: none; /* Removes list bullet points */
+  display: inline; /* Displays list items horizontally */
+  margin-right: 20px; /* Adds spacing between menu items */
+  font-size: 16px; /* Sets the font size */
 }
 
 nav ul li a {
-  color: #000;
-  font-family: 'Karla', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-decoration: none;
+  color: #000; /* Sets text color to black */
+  font-family: 'Karla', sans-serif; /* Specifies font family */
+  font-size: 18px; /* Sets font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 500; /* Font weight */
+  line-height: normal; /* Normal line height */
+  text-decoration: none; /* Removes underlines from links */
 }
 
 /*****************/
 /* Main */
 /*****************/
+/* Styling for the main content area */
 main {
-  grid-area: main;
+  grid-area: main; /* Places this element in the 'main' grid area */
 }
 
 section {
-  display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  display: flex; /* Displays its children in a flex container */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
 }
 
 /*****************/
 /* Hero Section */
 /*****************/
+/* Styling for the background container */
 .BgContainer {
-  background-color: #495E57;
-  width: 100%;
+  background-color: #495E57; /* Sets background color */
+  width: 100%; /* Full width */
 }
 
+/* Styling for the hero section */
 .HeroSection {
-  display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: flex; /* Displays its children in a flex container */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  margin-right: 20%; /* Right margin */
+  margin-left: 20%; /* Left margin */
+  margin-top: 20px; /* Top margin */
+  margin-bottom: 20px; /* Bottom margin */
 }
 
+/* Styling for the hero image */
 .HeroSection img {
-  width: 419px;
-  height: 379px;
-  border-radius: 16px;
-  object-fit: cover; /* or 'contain' depending on your needs */
+  width: 419px; /* Image width */
+  height: 379px; /* Image height */
+  border-radius: 16px; /* Adds rounded corners to the image */
+  object-fit: cover; /* Controls how the image fits within its container */
 }
 
 .Details {
-  padding-right: 70px;
+  padding-right: 70px; /* Right padding */
 }
 
+/* Styling for text within the hero section */
 .Details h1 {
-  color: #F9F9F9;
-  font-family: Markazi Text;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 500;
-  margin: 0;
+  color: #F9F9F9; /* Text color */
+  font-family: 'Markazi Text', serif; /* Font family */
+  font-size: 64px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 500; /* Font weight */
+  margin: 0; /* Removes margin */
 }
 
 .Details h3 {
-  color: #F9F9F9;
-  font-family: Markazi Text;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 500;
-  margin: 0;
+  color: #F9F9F9; /* Text color */
+  font-family: 'Markazi Text', serif; /* Font family */
+  font-size: 40px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 500; /* Font weight */
+  margin: 0; /* Removes margin */
 }
 
+/* Styling for paragraph text in the hero section */
 .Details p {
-  color: #F9F9F9;
-  font-family: Karla;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  max-width: 62ch; /* This limits the line length to around 30 characters */
-  overflow-wrap: break-word; /* This property is used to specify whether or not the browser should insert line breaks within words to prevent text from overflowing its content box */
+  color: #F9F9F9; /* Text color */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 18px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 400; /* Font weight */
+  line-height: normal; /* Normal line height */
+  max-width: 62ch; /* Maximum width in characters */
+  overflow-wrap: break-word; /* Allows breaking long words to prevent overflow */
 }
 
+/* Styling for a button within the hero section */
 .Details button {
-  font-family: Karla;
-  font-size: 14px;
-  border: none;
-  border-radius: 16px;
-  background: #F4CE14;
-  width: 200px;
-  height: 52px;
-  cursor: pointer;
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 14px; /* Font size */
+  border: none; /* Removes button border */
+  border-radius: 16px; /* Adds rounded corners */
+  background: #F4CE14; /* Button background color */
+  width: 200px; /* Button width */
+  height: 52px; /* Button height */
+  cursor: pointer; /* Cursor style */
 }
 
 .Details button:hover {
-  background: #e2bd02;
+  background: #e2bd02; /* Button background color on hover */
 }
 
 /*****************/
 /* Specials */
 /*****************/
+/* Styling for the specials section */
 .Specials {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  display: flex; /* Displays its children in a flex container */
+  flex-direction: column; /* Vertical stacking of children */
+  justify-content: center; /* Centers children vertically */
+  align-items: center; /* Centers children horizontally */
+  margin-right: 20%; /* Right margin */
+  margin-left: 20%; /* Left margin */
+  margin-top: 10%; /* Top margin */
+  margin-bottom: 10%; /* Bottom margin */
 }
 
+/* Styling for the section header within specials */
 .SectionHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  display: flex; /* Displays its children in a flex container */
+  justify-content: space-between; /* Space between children */
+  align-items: center; /* Centers children vertically */
+  width: 100%; /* Full width */
 }
 
 .SectionHeader h1 {
-  color: #000;
-  font-family: Markazi Text;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 500;
-  margin: 0;
+  color: #000; /* Text color */
+  font-family: 'Markazi Text', serif; /* Font family */
+  font-size: 64px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 500; /* Font weight */
+  margin: 0; /* Removes margin */
 }
 
 .SectionHeader button {
-  font-family: Karla;
-  font-size: 14px;
-  border: none;
-  border-radius: 16px;
-  background: #F4CE14;
-  width: 200px;
-  height: 52px;
-  cursor: pointer;
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 14px; /* Font size */
+  border: none; /* Removes button border */
+  border-radius: 16px; /* Adds rounded corners */
+  background: #F4CE14; /* Button background color */
+  width: 200px; /* Button width */
+  height: 52px; /* Button height */
+  cursor: pointer; /* Cursor style */
 }
 
 .SectionHeader button:hover {
-  background: #e2bd02;
+  background: #e2bd02; /* Button background color on hover */
 }
 
+/* Styling for cards within the specials section */
 .Cards {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 3%;
-  width: 100%;
+  position: relative; /* Relative positioning */
+  display: flex; /* Displays its children in a flex container */
+  justify-content: space-between; /* Space between children */
+  align-items: center; /* Centers children vertically */
+  margin-top: 3%; /* Top margin */
+  width: 100%; /* Full width */
 }
 
-[class*='card']{
-  width: 252px;
-  height: 452px;
-  border-radius: 16px;
-  background: #EDEFEE;
+/* Styling for card elements */
+[class*='card'] {
+  width: 252px; /* Card width */
+  height: 452px; /* Card height */
+  border-radius: 16px; /* Adds rounded corners to cards */
+  background: #EDEFEE; /* Card background color */
 }
 
+/* Styling for dish images within cards */
 [class*='dishImg'] {
-  width: 252px;
-  height: 190px;
-  border-radius: 16px;
+  width: 252px; /* Image width */
+  height: 190px; /* Image height */
+  border-radius: 16px; /* Adds rounded corners to images */
 }
 
+/* Styling for dish details within cards */
 [class*='dishDetails'] {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Displays its children in a flex container */
+  flex-direction: column; /* Vertical stacking of children */
+  justify-content: center; /* Centers children vertically */
+  align-items: center; /* Centers children horizontally */
 }
 
+/* Styling for dish descriptions within cards */
 [class*='dDescription'] {
-  color: #000;
-  font-family: Karla;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  width: 224px;
+  color: #000; /* Text color */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 16px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 400; /* Font weight */
+  line-height: normal; /* Normal line height */
+  width: 224px; /* Maximum width in pixels */
 }
 
+/* Styling for dish titles and prices within cards */
 [class*='dishTitleAndPrice'] {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  display: flex; /* Displays its children in a flex container */
+  justify-content: space-between; /* Space between children */
+  align-items: center; /* Centers children vertically */
+  width: 100%; /* Full width */
 }
 
 [class*='dishTitleAndPrice'] h3 {
-  color: #000;
-  font-family: Karla;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-left: 6%;
+  color: #000; /* Text color */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 18px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 700; /* Font weight */
+  line-height: normal; /* Normal line height */
+  margin-left: 6%; /* Left margin */
 }
 
 [class*='dishTitleAndPrice'] p {
-  color: #F4CE14;
-  text-align: right;
-  font-family: Karla;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  margin-right: 6%;
- }
+  color: #F4CE14; /* Text color */
+  text-align: right; /* Right-aligns text */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 16px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 800; /* Font weight */
+  line-height: normal; /* Normal line height */
+  margin-right: 6%; /* Right margin */
+}
 
+/* Styling for order buttons and images within cards */
 [class*='OrderBtnAndImg'] {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 20px;
-  margin-left: 15px;
+  display: flex; /* Displays its children in a flex container */
+  align-items: center; /* Centers children vertically */
+  position: absolute; /* Absolute positioning within the card */
+  bottom: 20px; /* Distance from the bottom */
+  margin-left: 15px; /* Left margin */
 }
 
 [class*='OrderBtnAndImg'] button {
-  background: none !important;
-  border: none;
-  padding: 0;
-  font-family: Karla;
-  font-size: 18px;
-  font-weight: 1000;
-  cursor: pointer;
+  background: none; /* Removes button background */
+  border: none; /* Removes button border */
+  border-radius: 16px; /* Adds rounded corners to buttons */
+  padding: 10px; /* Button padding */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 18px; /* Font size */
+  font-weight: 1000; /* Font weight */
+  cursor: pointer; /* Cursor style */
+}
+
+[class*='OrderBtnAndImg'] button:hover {
+  background: #dddfde; /* Button background color on hover */
 }
 
 [class*='OrderBtnAndImg'] img {
-  width: 30px;
-  height: 27px;
-  margin-left: 15px;
+  width: 30px; /* Image width */
+  height: 27px; /* Image height */
+  margin-left: 15px; /* Left margin */
+}
+
+/*****************/
+/* User Reviews */
+/*****************/
+/* Styling for the user reviews section */
+.urev-container {
+  display: flex; /* Displays its children in a flex container */
+  flex-direction: column; /* Vertical stacking of children */
+  justify-content: center; /* Centers children vertically */
+  align-items: center; /* Centers children horizontally */
+  margin-right: 20%; /* Right margin */
+  margin-left: 20%; /* Left margin */
+  margin-top: 10%; /* Top margin */
+  margin-bottom: 10%; /* Bottom margin */
+}
+
+/* Styling for the reviews header */
+.ReviewsHeader {
+  display: flex; /* Displays its children in a flex container */
+  justify-content: space-between; /* Space between children */
+  align-items: center; /* Centers children vertically */
+  width: 100%; /* Full width */
+}
+
+.ReviewsHeader h1 {
+  color: #000; /* Text color */
+  font-family: 'Markazi Text', serif; /* Font family */
+  font-size: 64px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 500; /* Font weight */
+  margin: 0; /* Removes margin */
+}
+
+/* Styling for individual reviews within the user reviews section */
+.reviews {
+  position: relative; /* Relative positioning */
+  display: flex; /* Displays its children in a flex container */
+  justify-content: space-between; /* Space between children */
+  align-items: center; /* Centers children vertically */
+  margin-top: 3%; /* Top margin */
+  width: 100%; /* Full width */
+}
+
+/* Styling for user review elements */
+[class*='UserReview'] {
+  width: 220px; /* Review element width */
+  height: 240px; /* Review element height */
+  border-radius: 16px; /* Adds rounded corners */
+  background: #EDEFEE; /* Review element background color */
+}
+
+[class*='UserReview'] p {
+  color: #000; /* Text color */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 16px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 400; /* Font weight */
+  line-height: normal; /* Normal line height */
+}
+
+/* Styling for user image containers within reviews */
+[class*='userImageContainer'] {
+  display: flex; /* Displays its children in a flex container */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+}
+
+/* Styling for user image frames */
+[class*='frame'] {
+  width: 90px; /* Frame width */
+  height: 90px; /* Frame height */
+  border-radius: 50%; /* Creates a circular frame */
+  border: 1px solid #000; /* Border styling */
+  overflow: hidden; /* Hides overflowing content */
+}
+
+[class*='frame'] img {
+  width: 100%; /* Image width */
+}
+
+/* Styling for user titles and ratings within reviews */
+[class*='userTitleAndRating'] {
+  display: flex; /* Displays its children in a flex container */
+  justify-content: space-between; /* Space between children */
+  align-items: center; /* Centers children vertically */
+  width: 100%; /* Full width */
+}
+
+[class*='userTitleAndRating'] h3 {
+  color: #000; /* Text color */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 18px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 700; /* Font weight */
+  line-height: normal; /* Normal line height */
+  margin-left: 6%; /* Left margin */
+  margin-top: 6%; /* Top margin */
+  margin-bottom: 6%; /* Bottom margin */
+}
+
+[class*='userTitleAndRating'] p {
+  color: #F4CE14; /* Text color */
+  text-align: right; /* Right-aligns text */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 16px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 800; /* Font weight */
+  line-height: normal; /* Normal line height */
+  margin-right: 6%; /* Right margin */
+  margin-top: 6%; /* Top margin */
+  margin-bottom: 6%; /* Bottom margin */
+}
+
+/* Styling for review details within reviews */
+[class*='reviewDetails'] {
+  display: flex; /* Displays its children in a flex container */
+  flex-direction: column; /* Vertical stacking of children */
+  justify-content: center; /* Centers children vertically */
+  align-items: center; /* Centers children horizontally */
+}
+
+[class*='reviewDetails'] p {
+  color: #000; /* Text color */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 16px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 400; /* Font weight */
+  line-height: normal; /* Normal line height */
+  width: 195px; /* Maximum width in pixels */
+  margin: 0px; /* Removes margin */
 }
 
 /*****************/
 /* Footer */
 /*****************/
+/* Styling for the footer section */
 footer {
-  grid-area: footer;
-  display: flex;
-  justify-content: space-between; /* To evenly distribute items */
-  align-items: center; /* To vertically center items */
+  grid-area: footer; /* Places this element in the 'footer' grid area */
+  display: flex; /* Displays its children in a flex container */
+  justify-content: space-between; /* Space between children */
+  align-items: center; /* Centers children vertically */
 }
 
 /* Adjust styles for individual sections within the footer as needed */
 .FooterNav,
 .Contact,
 .SocialMediaLinks {
-flex: 1; /* Allow each section to grow and fill available space */
-text-align: center; /* Center-align the content within each section */
-margin: 0 10px; /* Add spacing between sections */
+  flex: 1; /* Allows each section to grow and fill available space */
+  text-align: center; /* Centers text within sections */
+  margin: 0 10px; /* Adds spacing between sections */
 }
 
 /* Style the ul and li elements in your footer as needed */
 .FooterNav ul,
 .Contact ul,
 .SocialMediaLinks ul {
-list-style: none; /* Remove list bullets */
-padding: 0;
+  list-style: none; /* Removes list bullet points */
+  padding: 0;
 }
 
 .FooterNav ul li,
 .Contact ul li,
 .SocialMediaLinks ul li {
-margin-bottom: 5px; /* Add spacing between list items */
+  margin-bottom: 5px; /* Adds spacing between list items */
 }
-
 
 /* Add a media query for screens smaller than 600px */
 @media (max-width: 600px) {
   .grid-container {
-      grid-template-columns: repeat(6, 1fr);
-      margin-left: 60px;
-      margin-right: 60px;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns on smaller screens */
+    margin-left: 60px; /* Left margin adjustment */
+    margin-right: 60px; /* Right margin adjustment */
 
-      /* Define the grid areas */
-      grid-template-areas:
-          "header header header header header header"
-          "main main main main main main"
-          "footer footer footer footer footer footer";
+    /* Define the grid areas for header, main content, and footer */
+    grid-template-areas:
+        "header header header header header header"
+        "main main main main main main"
+        "footer footer footer footer footer footer";
   }
 }
-

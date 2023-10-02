@@ -76,33 +76,63 @@ function Main() {
         </div>
       </section>
 
-      <section className='UserReviews'>
-        <h1>User Reviews</h1>
-
-        <div className='UserReview1'>
-          <img src={Images.user1} alt="Emma Wills" width={100} height={150}></img>
-          <h3>Emma Wills</h3>
-          <p>4.5 stars</p>
-          <p>I had a wonderful dining experience. The food was exquisite, and the service was impeccable.</p>
+      <section className='urev-container'>
+        <div className='ReviewsHeader'>
+          <h1>User Reviews</h1>
         </div>
 
-        <div className='UserReview2'>
-          <img src={Images.user2} alt="Greta Hugh" width={150} height={100}></img>
-          <h3>Greta Hugh</h3>
-          <p>5 stars</p>
-          <p>Culinary excellence! Every bite was a flavor journey. Highly recommend!</p>
+        <div className='reviews'>
+          <div className='UserReview1'>
+            <div className='userImageContainer'>
+              <div className='frame1'>
+                <img src={Images.user1} alt="Emma Wills"></img>
+              </div>
+            </div>
+            <div className='userTitleAndRating1'>
+              <h3>Emma Wills</h3>
+              <p>4.5 ★</p>
+            </div>
+            <div className='reviewDetails1'>
+              <p>I had a wonderful dining experience. The food was exquisite, and the service was impeccable.</p>
+            </div>
+          </div>
+
+          <div className='UserReview2'>
+            <div className='userImageContainer2'>
+              <div className='frame2'>
+                <img src={Images.user2} alt="Greta Hugh"></img>
+              </div>
+            </div>
+            <div className='userTitleAndRating2'>
+              <h3>Greta Hugh</h3>
+              <p>5 ★</p>
+            </div>
+            <div className='reviewDetails1'>
+              <p>Culinary excellence! Every bite was a flavor journey. Highly recommend!</p>
+            </div>
+          </div>
+
+          <div className='UserReview3'>
+            <div className='userImageContainer3'>
+              <div className='frame3'>
+                <img src={Images.user3} alt="Hayata Mills"></img>
+              </div>
+            </div>
+
+            <div className='userTitleAndRating3'>
+              <h3>Hayata Mills</h3>
+              <p>4.7 ★</p>
+            </div>
+            <div className='reviewDetails1'>
+              <p>Exceptional dining! The blend of flavors in every dish was perfect.</p>
+            </div>
+          </div>
         </div>
 
-        <div className='UserReview3'>
-          <img src={Images.user3} alt="Hayata Mills" width={150} height={100}></img>
-          <h3>Hayata Mills</h3>
-          <p>4.7 stars</p>
-          <p>Exceptional dining! The blend of flavors in every dish was perfect.</p>
-        </div>
       </section>
 
       <section className='Owners'>
-        <div className='Details'>
+        <div className='oDetails'>
           <h1>Meet our Team</h1>
           <h3>Owner’s of the Restaurant</h3>
           <p>Meet the passionate duo behind the culinary magic at "Little Lemon Restaurant" in the heart of Chicago – Kyle and Jessica. Their shared vision of creating a place where food is a celebration of flavor and community has made their restaurant a beloved destination for locals and visitors alike. Whether you're a Chicago native or a tourist exploring the city's vibrant food culture, a visit to "Little Lemon Restaurant" promises a delightful journey through the culinary passions of Kyle and Jessica.</p>
