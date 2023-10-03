@@ -301,6 +301,7 @@ section {
   margin-left: 20%; /* Left margin */
   margin-top: 10%; /* Top margin */
   margin-bottom: 10%; /* Bottom margin */
+  padding-bottom: 4%;
 }
 
 /* Styling for the reviews header */
@@ -326,7 +327,6 @@ section {
   display: flex; /* Displays its children in a flex container */
   justify-content: space-between; /* Space between children */
   align-items: center; /* Centers children vertically */
-  margin-top: 3%; /* Top margin */
   width: 100%; /* Full width */
 }
 
@@ -420,23 +420,120 @@ section {
 }
 
 /*****************/
+/* Owner's Detail */
+/*****************/
+.bg-container1 {
+  background-color: #495E57; /* Sets background color */
+  width: 100%; /* Full width */
+}
+
+.ownerSection {
+  display: flex; /* Displays its children in a flex container */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  margin-right: 20%; /* Right margin */
+  margin-left: 20%; /* Left margin */
+  margin-top: 20px; /* Top margin */
+  margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Styling for the hero image */
+.ownerSection img {
+  border-radius: 16px; /* Adds rounded corners to the image */
+  object-fit: cover; /* Controls how the image fits within its container */
+}
+
+.oDetails {
+  padding-right: 70px; /* Right padding */
+}
+
+/* Styling for text within the hero section */
+.oDetails h1 {
+  color: #F4CE14; /* Text color */
+  font-family: 'Markazi Text', serif; /* Font family */
+  font-size: 64px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 500; /* Font weight */
+  margin: 0; /* Removes margin */
+}
+
+.oDetails h3 {
+  color: #F9F9F9; /* Text color */
+  font-family: 'Markazi Text', serif; /* Font family */
+  font-size: 40px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 500; /* Font weight */
+  margin: 0; /* Removes margin */
+}
+
+/* Styling for paragraph text in the hero section */
+.oDetails p {
+  color: #F9F9F9; /* Text color */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 18px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 400; /* Font weight */
+  line-height: normal; /* Normal line height */
+  max-width: 62ch; /* Maximum width in characters */
+  overflow-wrap: break-word; /* Allows breaking long words to prevent overflow */
+}
+
+/*****************/
+/* Line */
+/*****************/
+
+.lineContainer {
+  display: flex; /* Displays its children in a flex container */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  width: 100%;
+  height: 1%;
+  margin-top: 7%;
+  margin-bottom: 2%;
+}
+.endLine{
+  width: 50%;
+  height: 1%;
+  background-color: #333;
+}
+
+/*****************/
 /* Footer */
 /*****************/
 /* Styling for the footer section */
 footer {
   grid-area: footer; /* Places this element in the 'footer' grid area */
+  background: #333;
+  width: 100%;
   display: flex; /* Displays its children in a flex container */
-  justify-content: space-between; /* Space between children */
+  justify-content: center; /* Space between children */
   align-items: center; /* Centers children vertically */
 }
+.footerContainer {
+  display: flex; /* Displays its children in a flex container */
+  justify-content: space-evenly; /* Space between children */
+  align-items: center; /* Centers children vertically */
+  margin-top: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #333;
+  color: #F9F9F9; /* Text color */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 18px; /* Font size */
+  width: 85%;
+}
 
+.logoFrame img {
+  width: 100px;
+  height: 170px;
+}
 /* Adjust styles for individual sections within the footer as needed */
 .FooterNav,
 .Contact,
 .SocialMediaLinks {
-  flex: 1; /* Allows each section to grow and fill available space */
-  text-align: center; /* Centers text within sections */
-  margin: 0 10px; /* Adds spacing between sections */
+  text-align: left; /* Centers text within sections */
+  margin: 0 5px; /* Adds spacing between sections */
+  height: 215px;
 }
 
 /* Style the ul and li elements in your footer as needed */
@@ -451,6 +548,15 @@ footer {
 .Contact ul li,
 .SocialMediaLinks ul li {
   margin-bottom: 5px; /* Adds spacing between list items */
+}
+
+.FooterNav ul li a,
+.Contact ul li a,
+.SocialMediaLinks ul li a{
+  color: #F9F9F9; /* Text color */
+  font-family: 'Karla', sans-serif; /* Font family */
+  font-size: 18px; /* Font size */
+  text-decoration: none; /* Removes underlines from links */
 }
 
 /* Add a media query for screens smaller than 600px */

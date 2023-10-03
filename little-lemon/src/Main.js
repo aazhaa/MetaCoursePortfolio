@@ -5,7 +5,6 @@ import './stylesheet.css';
 function Main() {
   return (
     <main>
-
       {/* Hero Section - Details about restaurant and reservation button */}
       <section>
         <div className='BgContainer'>
@@ -16,20 +15,16 @@ function Main() {
               <p>Little Lemon is a charming neighborhood bistro that serves simple foor and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.</p>
               <button>Book Table</button>
             </div>
-
             <img src={Images.heroImage} alt="Restaurant Food Glipse"/>
           </div>
         </div>
       </section>
-
-
       {/* Highlight Section - Three featured dishes */}
       <section className='Specials'>
         <div className='SectionHeader'>
           <h1>Specials</h1>
           <button>Online Menu</button>
         </div>
-
         <div className='Cards'>
           <div className='card1'>
             <img className='dishImg1' src={Images.dish1} alt="Greek Salad"/>
@@ -75,12 +70,10 @@ function Main() {
           </div>
         </div>
       </section>
-
       <section className='urev-container'>
         <div className='ReviewsHeader'>
           <h1>User Reviews</h1>
         </div>
-
         <div className='reviews'>
           <div className='UserReview1'>
             <div className='userImageContainer'>
@@ -96,7 +89,6 @@ function Main() {
               <p>I had a wonderful dining experience. The food was exquisite, and the service was impeccable.</p>
             </div>
           </div>
-
           <div className='UserReview2'>
             <div className='userImageContainer2'>
               <div className='frame2'>
@@ -111,14 +103,12 @@ function Main() {
               <p>Culinary excellence! Every bite was a flavor journey. Highly recommend!</p>
             </div>
           </div>
-
           <div className='UserReview3'>
             <div className='userImageContainer3'>
               <div className='frame3'>
                 <img src={Images.user3} alt="Hayata Mills"></img>
               </div>
             </div>
-
             <div className='userTitleAndRating3'>
               <h3>Hayata Mills</h3>
               <p>4.7 ★</p>
@@ -128,19 +118,22 @@ function Main() {
             </div>
           </div>
         </div>
-
       </section>
-
-      <section className='Owners'>
-        <div className='oDetails'>
-          <h1>Meet our Team</h1>
-          <h3>Owner’s of the Restaurant</h3>
-          <p>Meet the passionate duo behind the culinary magic at "Little Lemon Restaurant" in the heart of Chicago – Kyle and Jessica. Their shared vision of creating a place where food is a celebration of flavor and community has made their restaurant a beloved destination for locals and visitors alike. Whether you're a Chicago native or a tourist exploring the city's vibrant food culture, a visit to "Little Lemon Restaurant" promises a delightful journey through the culinary passions of Kyle and Jessica.</p>
+      <section>
+        <div className='bg-container1'>
+          <div className='ownerSection'>
+            <div className='oDetails'>
+              <h1>Meet Our Team</h1>
+              <h3>Owner’s of the Restaurant</h3>
+              <p>Meet the passionate duo behind the culinary magic at "Little Lemon Restaurant" in the heart of Chicago – Kyle and Jessica. Their shared vision of creating a place where food is a celebration of flavor and community has made their restaurant a beloved destination for locals and visitors alike. Whether you're a Chicago native or a tourist exploring the city's vibrant food culture, a visit to "Little Lemon Restaurant" promises a delightful journey through the culinary passions of Kyle and Jessica.</p>
+            </div>
+            <img src={Images.owners} alt="Edward Gregrok and Lynda William Owners"/>
+          </div>
         </div>
-
-        <img src={Images.owner1} alt="Edward Gregrok Owner" width={150} height={150}/>
-        <img src={Images.owner2} alt="Lynda William Owner" width={200} height={150}/>
       </section>
+      <div className='lineContainer'>
+        <div className='endLine'></div>
+      </div>
     </main>
   );
 }

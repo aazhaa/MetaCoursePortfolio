@@ -10,6 +10,7 @@ import user2 from './images/User2.jpg';
 import user3 from './images/User3.jpg';
 import owner1 from './images/male-chef.jpg';
 import owner2 from './images/women-chef.jpg';
+import owners from './images/Owners.png'
 import delivery from './images/delivery.png';
 
 
@@ -25,6 +26,7 @@ export const Images = {
     user3,
     owner1,
     owner2,
+    owners,
     delivery
 };
 
