@@ -1,18 +1,18 @@
 import './App.css';
 
-import Header from './Header.js';
-import Main from './Main.js';
-import Footer from './Footer.js';
-import './stylesheet.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import HomePage from './Homepage';
 
 
 function App() {
   return (
-    <div className="grid-container">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* Add other routes here */}
+      </Routes>
+    </Router>
   );
 }
 

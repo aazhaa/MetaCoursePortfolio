@@ -7,7 +7,7 @@
   grid-template-columns: repeat(12, 1fr); /* 12 columns with equal width */
   grid-template-rows: auto auto auto; /* 3 rows with automatic height */
   gap: 20px; /* 20px gap between grid items */
-  margin-top: 10px;
+  margin-top: 20px;
 
   /* Define the grid areas for header, main content, and footer */
   grid-template-areas:
@@ -28,14 +28,16 @@
 }
 
 /* Styling for navigation items */
-nav ul li {
+.header-nav-style ul li {
   list-style-type: none; /* Removes list bullet points */
   display: inline; /* Displays list items horizontally */
   margin-right: 20px; /* Adds spacing between menu items */
   font-size: 16px; /* Sets the font size */
 }
 
-nav ul li a {
+/* Sets text color, font family, size, style, weight,
+line height, and text decoration for the nav element */
+.header-nav-style a {
   color: #000; /* Sets text color to black */
   font-family: 'Karla', sans-serif; /* Specifies font family */
   font-size: 18px; /* Sets font size */
@@ -537,20 +539,20 @@ footer {
 }
 
 /* Style the ul and li elements in your footer as needed */
-.FooterNav ul,
+.footer-nav-style ul,
 .Contact ul,
 .SocialMediaLinks ul {
   list-style: none; /* Removes list bullet points */
   padding: 0;
 }
 
-.FooterNav ul li,
+.footer-nav-style ul li,
 .Contact ul li,
 .SocialMediaLinks ul li {
   margin-bottom: 5px; /* Adds spacing between list items */
 }
 
-.FooterNav ul li a,
+.footer-nav-style a,
 .Contact ul li a,
 .SocialMediaLinks ul li a{
   color: #F9F9F9; /* Text color */
